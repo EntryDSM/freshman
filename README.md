@@ -1,1 +1,3 @@
 # freshman
+
+### Project Structure
