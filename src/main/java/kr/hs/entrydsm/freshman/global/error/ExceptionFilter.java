@@ -27,7 +27,6 @@ public class ExceptionFilter extends OncePerRequestFilter {
             } else {
                 setErrorResponse(ErrorCode.INTERNAL_SERVER_ERROR, response);
             }
-
         }
     }
 
