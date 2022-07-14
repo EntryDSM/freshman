@@ -69,6 +69,8 @@
         │                   │                   ├── MyPageResponse.java
         │                   │                   └── TokenResponse.java
         │                   └── global
+        │                       ├── cors
+        │                       │   └── WebMvcConfig.java
         │                       ├── error
         │                       │   ├── CustomException.java
         │                       │   ├── ErrorCode.java
@@ -79,21 +81,19 @@
         │                       │   └── CurrentUserFacade.java
         │                       ├── property
         │                       │   └── EnableConfigurationPropertiesConfig.java
-        │                       ├── security
-        │                       │   ├── FilterConfig.java
-        │                       │   ├── SecurityConfig.java
-        │                       │   ├── auth
-        │                       │   │   ├── AuthDetails.java
-        │                       │   │   └── AuthDetailsService.java
-        │                       │   ├── exception
-        │                       │   │   ├── ExpiredJwtException.java
-        │                       │   │   └── InvalidJwtException.java
-        │                       │   └── jwt
-        │                       │       ├── JwtProperty.java
-        │                       │       ├── JwtTokenFilter.java
-        │                       │       └── JwtTokenProvider.java
-        │                       └── web
-        │                           └── WebMvcConfig.java
+        │                       └── security
+        │                           ├── FilterConfig.java
+        │                           ├── SecurityConfig.java
+        │                           ├── auth
+        │                           │   ├── AuthDetails.java
+        │                           │   └── AuthDetailsService.java
+        │                           ├── exception
+        │                           │   ├── ExpiredJwtException.java
+        │                           │   └── InvalidJwtException.java
+        │                           └── jwt
+        │                               ├── JwtProperty.java
+        │                               ├── JwtTokenFilter.java
+        │                               └── JwtTokenProvider.java
         └── resources
             └── application.yml
 
