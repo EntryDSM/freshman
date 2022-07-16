@@ -23,15 +23,16 @@ public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Length(min = 6, max = 24)
     @NotNull
     private String accountId;
 
-    @Length(max = 60)
+    @Length(min = 60, max = 60)
     @NotNull
     private String password;
 
     @NotNull
-    @Length(max = 10)
+    @Length(min = 2, max = 10)
     private String name;
 
     @Builder
