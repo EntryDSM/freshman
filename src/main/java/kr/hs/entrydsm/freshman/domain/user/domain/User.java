@@ -31,6 +31,7 @@ public class User {
     private String password;
 
     @NotNull
+    @Length(max = 10)
     private String name;
 
     @Builder
