@@ -57,13 +57,15 @@
         │                   │       ├── service
         │                   │       │   ├── MyPageService.java
         │                   │       │   ├── SignInService.java
-        │                   │       │   └── SignUpService.java
+        │                   │       │   ├── SignUpService.java
+        │                   │       │   └── UpdateUserInfoService.java
         │                   │       └── web
         │                   │           ├── UserController.java
         │                   │           └── dto
         │                   │               ├── request
         │                   │               │   ├── SignInRequest.java
-        │                   │               │   └── SignUpRequest.java
+        │                   │               │   ├── SignUpRequest.java
+        │                   │               │   └── UpdateUserInfoRequest.java
         │                   │               └── response
         │                   │                   ├── MyPageElement.java
         │                   │                   ├── MyPageResponse.java
@@ -97,5 +99,5 @@
         └── resources
             └── application.yml
 
-36 directories, 58 files
+36 directories, 60 files
 ```
