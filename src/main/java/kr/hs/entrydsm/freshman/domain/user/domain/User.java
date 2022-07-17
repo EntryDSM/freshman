@@ -35,11 +35,22 @@ public class User {
     @Length(min = 2, max = 10)
     private String name;
 
+    private String profileImageUrl;
+
+    @Length(min = 1, max = 20)
+    private String introduce;
+
     @Builder
     public User(String accountId, String password, String name) {
         this.accountId = accountId;
         this.password = password;
         this.name = name;
+    }
+
+    public void update(String name, String introduce, String profileImageUrl) {
+        this.name = name;
+        this.introduce = introduce;
+        this.profileImageUrl = profileImageUrl;
     }
 
 }
