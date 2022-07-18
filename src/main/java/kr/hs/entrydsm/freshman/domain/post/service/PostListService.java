@@ -20,7 +20,7 @@ public class PostListService {
     public PostListResponse execute() {
         List<PostElement> postList = postRepository.findAll()
                 .stream()
-                .map(post -> new PostElement(post.getId(), post.getTitle(), post.getContent()))
+                .map(post -> new PostElement(post.getId(), post.getTitle()))
                 .collect(Collectors.toList());
 
         return new PostListResponse(postList);
