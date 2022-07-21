@@ -14,7 +14,7 @@ import org.springframework.transaction.annotation.Transactional;
 @Service
 public class PostDetailsService {
 
-    private final static String ANONYMOUS_USER = "anonymousUser";
+    private static final String ANONYMOUS_USER = "anonymousUser";
     private final CurrentUserFacade currentUserFacade;
     private final PostRepository postRepository;
 
