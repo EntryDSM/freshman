@@ -10,5 +10,6 @@ import java.util.List;
 public class MyPageResponse {
 
     private final String name;
+    private final String introduce;
     private final List<MyPageElement> myFeedList;
 }
