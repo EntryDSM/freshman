@@ -23,9 +23,9 @@ public class MyPageService {
 
         List<MyPageElement> postList = postRepository.findAllByUserId(user.getId())
                 .stream()
-                .map(post -> new MyPageElement(post.getTitle(), post.getContent()))
+                .map(post -> new MyPageElement(post.getId(), post.getTitle(), post.getContent()))
                 .collect(Collectors.toList());
 
-        return new MyPageResponse(user.getName(), postList);
+        return new MyPageResponse(user.getName(), user.getIntroduce(), postList);
     }
 }
