@@ -26,6 +26,6 @@ public class MyPageService {
                 .map(post -> new MyPageElement(post.getId(), post.getTitle(), post.getContent()))
                 .collect(Collectors.toList());
 
-        return new MyPageResponse(user.getName(), user.getIntroduce(), postList);
+        return new MyPageResponse(user.getName(), user.getIntroduce(), user.getProfileImageUrl(), postList);
     }
 }

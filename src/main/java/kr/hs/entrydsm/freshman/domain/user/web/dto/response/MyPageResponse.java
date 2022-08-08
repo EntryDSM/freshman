@@ -11,5 +11,6 @@ public class MyPageResponse {
 
     private final String name;
     private final String introduce;
+    private final String profileUrl;
     private final List<MyPageElement> myFeedList;
 }
