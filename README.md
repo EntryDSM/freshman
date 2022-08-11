@@ -22,6 +22,17 @@
         │               └── freshman
         │                   ├── EntryFreshmanApplication.java
         │                   ├── domain
+        │                   │   ├── image
+        │                   │   │   ├── exception
+        │                   │   │   │   ├── ImageNotFoundException.java
+        │                   │   │   │   └── InvalidImageExtensionFormatException.java
+        │                   │   │   ├── service
+        │                   │   │   │   └── ImageService.java
+        │                   │   │   └── web
+        │                   │   │       ├── ImageController.java
+        │                   │   │       └── dto
+        │                   │   │           └── response
+        │                   │   │               └── ImageResponse.java
         │                   │   ├── post
         │                   │   │   ├── domain
         │                   │   │   │   ├── Post.java
@@ -70,34 +81,38 @@
         │                   │                   ├── MyPageElement.java
         │                   │                   ├── MyPageResponse.java
         │                   │                   └── TokenResponse.java
-        │                   └── global
-        │                       ├── cors
-        │                       │   └── WebMvcConfig.java
-        │                       ├── error
-        │                       │   ├── CustomException.java
-        │                       │   ├── ErrorCode.java
-        │                       │   ├── ErrorResponse.java
-        │                       │   ├── ExceptionFilter.java
-        │                       │   └── ExceptionHandler.java
-        │                       ├── facade
-        │                       │   └── CurrentUserFacade.java
-        │                       ├── property
-        │                       │   └── EnableConfigurationPropertiesConfig.java
-        │                       └── security
-        │                           ├── FilterConfig.java
-        │                           ├── SecurityConfig.java
-        │                           ├── auth
-        │                           │   ├── AuthDetails.java
-        │                           │   └── AuthDetailsService.java
-        │                           ├── exception
-        │                           │   ├── ExpiredJwtException.java
-        │                           │   └── InvalidJwtException.java
-        │                           └── jwt
-        │                               ├── JwtProperty.java
-        │                               ├── JwtTokenFilter.java
-        │                               └── JwtTokenProvider.java
+        │                   ├── global
+        │                   │   ├── cors
+        │                   │   │   └── WebMvcConfig.java
+        │                   │   ├── error
+        │                   │   │   ├── CustomException.java
+        │                   │   │   ├── ErrorCode.java
+        │                   │   │   ├── ErrorResponse.java
+        │                   │   │   ├── ExceptionFilter.java
+        │                   │   │   └── ExceptionHandler.java
+        │                   │   ├── facade
+        │                   │   │   └── CurrentUserFacade.java
+        │                   │   ├── property
+        │                   │   │   └── EnableConfigurationPropertiesConfig.java
+        │                   │   └── security
+        │                   │       ├── FilterConfig.java
+        │                   │       ├── SecurityConfig.java
+        │                   │       ├── auth
+        │                   │       │   ├── AuthDetails.java
+        │                   │       │   └── AuthDetailsService.java
+        │                   │       ├── exception
+        │                   │       │   ├── ExpiredJwtException.java
+        │                   │       │   └── InvalidJwtException.java
+        │                   │       └── jwt
+        │                   │           ├── JwtProperty.java
+        │                   │           ├── JwtTokenFilter.java
+        │                   │           └── JwtTokenProvider.java
+        │                   └── infrastructure
+        │                       └── s3
+        │                           ├── ImageFacade.java
+        │                           └── S3Config.java
         └── resources
             └── application.yml
 
-36 directories, 60 files
+44 directories, 67 files
 ```
