@@ -23,6 +23,9 @@ public class ImageFacade {
     @Value("${cloud.aws.s3.bucket}")
     private String bucket;
 
+    @Value("${cloud.aws.s3.url}")
+    private String baseUrl;
+
     public String upload(MultipartFile multipartFile) {
         String extension = getExtension(multipartFile);
         String imageUrl = "freshman/" + UUID.randomUUID() + extension;
@@ -40,7 +43,7 @@ public class ImageFacade {
             throw ImageNotFoundException.EXCEPTION;
         }
 
-        return amazonS3Client.getUrl(bucket, imageUrl).toString();
+        return baseUrl + imageUrl;
     }
 
     private String getExtension(MultipartFile multipartFile) {

@@ -39,6 +39,7 @@ cloud:
     region:
       static: ${AWS_S3_REGION}
     s3:
+      url: ${AWS_S3_URL}
       bucket: ${AWS_S3_BUCKET}
     stack:
       auto: false
