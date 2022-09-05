@@ -33,6 +33,7 @@ jobs:
         name: Build & push Docker image
         with:
           image: yapaghetti
+          tags: latest
           dockerfile: ./Dockerfile
           registry: ${{ secrets.DOCKER_REGISTRY }}
           username: ${{ secrets.DOCKER_USERNAME }}
